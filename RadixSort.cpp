@@ -74,7 +74,14 @@ void solve(){
     ll i, j, k, m,n, cnt = 0, ans = 0, sum = 0;
 
     cin >> n;
-
+        
+    //Radix sort is used for if numbers are in range from 1 to n^2        
+    //Time complexity : O((n+b)(logb (k)) 
+    ///Where k is the maximum number and (b) is the base of the number.
+    ///Space Complexity : O(n)
+    /// k <= n^c
+     
+       
     vector<ll>v = read(n);
 
     ll mx = *max_element(all(v));
